@@ -1,0 +1,74 @@
+$date
+	Sun Dec 12 23:58:46 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1us
+$end
+$scope module PriorityEncoder_tb $end
+$var wire 4 ! outp [3:0] $end
+$var wire 1 " V_tb $end
+$var reg 1 # enable_low $end
+$var reg 10 $ inputs [9:0] $end
+$scope module DUT $end
+$var wire 1 # enablen $end
+$var wire 10 % keypad [9:0] $end
+$var reg 4 & D [3:0] $end
+$var reg 1 " V $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1001 &
+b1000000000 %
+b1000000000 $
+0#
+1"
+b1001 !
+$end
+#5000
+0"
+bx !
+bx &
+b0 $
+b0 %
+#15000
+1"
+b1000 !
+b1000 &
+b100000000 $
+b100000000 %
+#20000
+0"
+bx !
+bx &
+b0 $
+b0 %
+#25000
+1"
+b0 !
+b0 &
+b1 $
+b1 %
+#35000
+0"
+bx !
+bx &
+b0 $
+b0 %
+#45000
+1"
+b101 !
+b101 &
+b100000 $
+b100000 %
+#55000
+0"
+bx !
+bx &
+b0 $
+b0 %
+#65000

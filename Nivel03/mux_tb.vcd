@@ -1,0 +1,52 @@
+$date
+	Sun Dec 12 23:28:40 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mux_tb $end
+$var wire 1 ! out_tb $end
+$var reg 1 " D0_tb $end
+$var reg 1 # D1_tb $end
+$var reg 1 $ Sel_tb $end
+$scope module UUT $end
+$var wire 1 " D0 $end
+$var wire 1 # D1 $end
+$var wire 1 $ Sel $end
+$var reg 1 ! out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x$
+1#
+0"
+x!
+$end
+#10000
+0!
+0$
+#30000
+1!
+0#
+1"
+#35000
+0!
+1#
+0"
+#40000
+1!
+0#
+1"
+#45000
+0!
+1#
+0"
+#50000
+1!
+1$
+#70000

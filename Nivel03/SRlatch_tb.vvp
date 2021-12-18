@@ -1,0 +1,74 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002c94b3fa7b0 .scope module, "SRlatch_tb" "SRlatch_tb" 2 4;
+ .timescale -9 -12;
+v000002c94b445c70_0 .net "Q_tb", 0 0, L_000002c94b443140;  1 drivers
+v000002c94b48c200_0 .net "Qn_tb", 0 0, L_000002c94b442f10;  1 drivers
+v000002c94b48c2a0_0 .var "R_tb", 0 0;
+v000002c94b48b8a0_0 .var "S_tb", 0 0;
+S_000002c94b3fbc80 .scope module, "UUT" "SRlatch" 2 9, 3 1 0, S_000002c94b3fa7b0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "S";
+    .port_info 1 /INPUT 1 "R";
+    .port_info 2 /OUTPUT 1 "Q";
+    .port_info 3 /OUTPUT 1 "Qn";
+L_000002c94b3f97b0 .functor OR 1, v000002c94b48c2a0_0, L_000002c94b442ce0, C4<0>, C4<0>;
+L_000002c94b3fa450 .functor NOT 1, L_000002c94b3f97b0, C4<0>, C4<0>, C4<0>;
+L_000002c94b3f6f80 .functor OR 1, v000002c94b48b8a0_0, L_000002c94b3fa450, C4<0>, C4<0>;
+L_000002c94b442ce0 .functor NOT 1, L_000002c94b3f6f80, C4<0>, C4<0>, C4<0>;
+L_000002c94b443140 .functor BUFZ 1, L_000002c94b3fa450, C4<0>, C4<0>, C4<0>;
+L_000002c94b442f10 .functor BUFZ 1, L_000002c94b442ce0, C4<0>, C4<0>, C4<0>;
+v000002c94b3fa3b0_0 .net "Q", 0 0, L_000002c94b443140;  alias, 1 drivers
+v000002c94b3f9710_0 .net "Q_int", 0 0, L_000002c94b3fa450;  1 drivers
+v000002c94b3fa940_0 .net "Qn", 0 0, L_000002c94b442f10;  alias, 1 drivers
+v000002c94b3fa9e0_0 .net "Qn_int", 0 0, L_000002c94b442ce0;  1 drivers
+v000002c94b3fbe10_0 .net "R", 0 0, v000002c94b48c2a0_0;  1 drivers
+v000002c94b3fbeb0_0 .net "S", 0 0, v000002c94b48b8a0_0;  1 drivers
+v000002c94b445b30_0 .net *"_ivl_1", 0 0, L_000002c94b3f97b0;  1 drivers
+v000002c94b445bd0_0 .net *"_ivl_5", 0 0, L_000002c94b3f6f80;  1 drivers
+    .scope S_000002c94b3fa7b0;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "SRlatch_tb.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_000002c94b3fa7b0 {0 0 0};
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002c94b48b8a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002c94b48c2a0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002c94b48b8a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002c94b48c2a0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002c94b48b8a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002c94b48c2a0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002c94b48b8a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002c94b48c2a0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002c94b48b8a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002c94b48c2a0_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 26 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "SRlatch_tb.v";
+    "./SRlatch.v";

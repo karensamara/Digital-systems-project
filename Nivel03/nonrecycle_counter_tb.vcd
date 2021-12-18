@@ -1,0 +1,94 @@
+$date
+	Sun Dec 12 22:16:36 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module nonrecycle_counter_tb $end
+$var wire 1 ! out_tb $end
+$var reg 1 " clk_tb $end
+$var reg 1 # clr_tb $end
+$scope module UUT $end
+$var wire 1 " clk $end
+$var wire 1 # clr $end
+$var reg 3 $ count [2:0] $end
+$var reg 1 ! out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+1#
+0"
+0!
+$end
+#10000000
+1"
+#20000000
+0"
+#30000000
+1"
+#40000000
+0"
+#50000000
+b1 $
+1"
+0#
+#60000000
+0"
+#70000000
+b10 $
+1"
+#80000000
+0"
+#90000000
+b11 $
+1"
+#100000000
+0"
+#110000000
+b100 $
+1"
+#120000000
+0"
+#130000000
+1!
+b101 $
+1"
+#140000000
+0"
+#150000000
+b110 $
+1"
+#160000000
+0"
+#170000000
+b111 $
+1"
+#180000000
+0"
+#190000000
+1"
+#200000000
+0"
+#210000000
+1"
+#220000000
+0"
+#230000000
+1"
+#240000000
+0"
+#250000000
+0!
+b0 $
+1"
+1#
+#260000000
+0"
+#270000000
+1"
